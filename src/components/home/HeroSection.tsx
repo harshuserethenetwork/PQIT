@@ -42,7 +42,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main headline */}
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s", opacity: 0 }}>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-white leading-[1.08] tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s", opacity: 0 }}>
             {heroContent.headline}
             <br />
             <span className="bg-gradient-to-r from-primary-400 via-violet-400 to-accent-400 bg-clip-text text-transparent">

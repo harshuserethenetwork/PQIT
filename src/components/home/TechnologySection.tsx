@@ -109,10 +109,10 @@ export default function TechnologySection() {
             <RevealOnScroll key={cap.title} delay={index * 100} className="h-full">
               <div className="card-premium text-center h-full flex flex-col justify-start">
                 <div className="text-4xl mb-4">{cap.icon}</div>
-                <h3 className="font-display font-bold text-neutral-900 text-lg mb-3">
+                <h3 className="font-display font-bold text-neutral-900 text-xl mb-3">
                   {cap.title}
                 </h3>
-                <p className="text-sm text-neutral-500 leading-relaxed flex-1">
+                <p className="text-base text-neutral-600 leading-relaxed flex-1">
                   {cap.description}
                 </p>
               </div>

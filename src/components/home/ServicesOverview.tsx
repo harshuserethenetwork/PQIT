@@ -68,23 +68,23 @@ export default function ServicesOverview() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="font-display font-bold text-lg text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
+                  <h3 className="font-display font-bold text-xl text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-neutral-500 leading-relaxed mb-5 flex-1">
+                  <p className="text-base text-neutral-600 leading-relaxed mb-5 flex-1">
                     {service.shortDescription}
                   </p>
 
                   {/* Stat badge */}
-                  <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg ${colors.badge} text-xs font-semibold mb-4 w-fit`}>
+                  <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-lg ${colors.badge} text-xs sm:text-sm font-semibold mb-4 w-fit`}>
                     <span className="text-base">📈</span>
                     {service.stats.value} — {service.stats.label}
                   </div>
 
                   {/* Features preview */}
-                  <ul className="space-y-1.5 mb-5">
+                  <ul className="space-y-2 mb-5">
                     {service.features.slice(0, 3).map((feature) => (
-                      <li key={feature} className="flex items-center gap-2 text-xs text-neutral-500">
+                      <li key={feature} className="flex items-center gap-2 text-sm text-neutral-600">
                         <span className="w-1.5 h-1.5 rounded-full bg-primary-400 shrink-0" />
                         {feature}
                       </li>

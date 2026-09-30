@@ -58,10 +58,10 @@ export default function ValuePropositionSection() {
                       {Icon && <Icon className="w-5 h-5 text-white" strokeWidth={2} />}
                     </div>
                   </div>
-                  <h3 className="text-lg font-display font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
+                  <h3 className="text-xl font-display font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
                     {vp.title}
                   </h3>
-                  <p className="text-sm text-neutral-500 leading-relaxed flex-1">
+                  <p className="text-base text-neutral-600 leading-relaxed flex-1">
                     {vp.description}
                   </p>
                 </div>

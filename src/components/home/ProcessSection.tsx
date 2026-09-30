@@ -60,10 +60,10 @@ export default function ProcessSection() {
                   </span>
                 </div>
 
-                <h3 className="font-display font-bold text-white text-lg mb-3">
+                <h3 className="font-display font-bold text-white text-xl mb-3">
                   {step.title}
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
+                <p className="text-base text-neutral-300 leading-relaxed max-w-xs">
                   {step.description}
                 </p>
               </div>

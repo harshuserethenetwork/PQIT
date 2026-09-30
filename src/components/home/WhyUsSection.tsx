@@ -51,10 +51,10 @@ export default function WhyUsSection() {
                       <CheckCircle2 className="w-4 h-4 text-accent-600 group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
-                      <h4 className="font-display font-semibold text-neutral-900 mb-1 text-[0.95rem]">
+                      <h4 className="font-display font-bold text-base sm:text-lg text-neutral-900 mb-1">
                         {point.title}
                       </h4>
-                      <p className="text-sm text-neutral-500 leading-relaxed">
+                      <p className="text-base text-neutral-600 leading-relaxed">
                         {point.description}
                       </p>
                     </div>
