@@ -1,35 +1,29 @@
+"use client";
+
 import { technologies } from "@/config/homepage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealOnScroll } from "@/components/ui/AnimatedCounter";
 
-const techLogos: Record<string, string> = {
-  sap: "SAP",
-  salesforce: "SF",
-  servicenow: "SN",
-  microsoft: "MS",
-  uipath: "UI",
-  automationanywhere: "AA",
-  blueprism: "BP",
-  aws: "AWS",
-  googlecloud: "GCP",
-  azure: "AZ",
-  oracle: "ORA",
-  ibm: "IBM",
-};
-
-const techColors: Record<string, string> = {
-  sap: "bg-blue-600",
-  salesforce: "bg-sky-500",
-  servicenow: "bg-green-600",
-  microsoft: "bg-indigo-600",
-  uipath: "bg-red-500",
-  automationanywhere: "bg-orange-500",
-  blueprism: "bg-blue-700",
-  aws: "bg-amber-500",
-  googlecloud: "bg-blue-500",
-  azure: "bg-blue-600",
-  oracle: "bg-red-600",
-  ibm: "bg-blue-800",
+const techLogoUrls: Record<string, string> = {
+  // New technologies
+  zendesk: "https://cdn.simpleicons.org/zendesk/03363D",
+  zoho: "https://cdn.simpleicons.org/zoho/E42527",
+  salesforce: "https://cdn.simpleicons.org/salesforce/00A1E0",
+  twilio: "https://cdn.simpleicons.org/twilio/F22F46",
+  five9: "https://cdn.worldvectorlogo.com/logos/five9.svg",
+  logitech: "https://cdn.simpleicons.org/logitech/00B8FC",
+  // Legacy technologies (kept for safety)
+  sap: "https://cdn.simpleicons.org/sap/0FAAFF",
+  servicenow: "https://cdn.simpleicons.org/servicenow/62D84E",
+  microsoft: "https://cdn.simpleicons.org/microsoft/5E5E5E",
+  uipath: "https://cdn.simpleicons.org/uipath/FA4616",
+  automationanywhere: "https://cdn.simpleicons.org/automationanywhere/FF7900",
+  blueprism: "https://cdn.worldvectorlogo.com/logos/blue-prism.svg",
+  aws: "https://cdn.simpleicons.org/amazonwebservices/232F3E",
+  googlecloud: "https://cdn.simpleicons.org/googlecloud/4285F4",
+  azure: "https://cdn.simpleicons.org/microsoftazure/0078D4",
+  oracle: "https://cdn.simpleicons.org/oracle/F80000",
+  ibm: "https://cdn.simpleicons.org/ibm/052FAD",
 };
 
 export default function TechnologySection() {
@@ -62,10 +56,28 @@ export default function TechnologySection() {
                 key={`${tech.logo}-${index}`}
                 className="flex-shrink-0 flex items-center gap-3 px-6 py-4 bg-white rounded-xl border border-neutral-200 shadow-card hover:border-primary-200 hover:shadow-card-hover transition-all duration-300 group"
               >
-                <div
-                  className={`w-8 h-8 rounded-lg ${techColors[tech.logo] || "bg-neutral-700"} flex items-center justify-center text-white text-xs font-bold`}
-                >
-                  {techLogos[tech.logo] || tech.name.slice(0, 2).toUpperCase()}
+                <div className="w-8 h-8 rounded-lg bg-white border border-neutral-100 flex items-center justify-center overflow-hidden shrink-0">
+                  {techLogoUrls[tech.logo] ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={techLogoUrls[tech.logo]}
+                      alt={tech.name}
+                      className="w-5 h-5 object-contain"
+                      onError={(e) => {
+                        const target = e.currentTarget as HTMLImageElement;
+                        target.style.display = "none";
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.classList.add("bg-neutral-700");
+                          parent.textContent = tech.name.slice(0, 2).toUpperCase();
+                        }
+                      }}
+                    />
+                  ) : (
+                    <span className="text-xs font-bold text-neutral-600">
+                      {tech.name.slice(0, 2).toUpperCase()}
+                    </span>
+                  )}
                 </div>
                 <span className="text-sm font-semibold text-neutral-700 group-hover:text-primary-600 transition-colors whitespace-nowrap">
                   {tech.name}
@@ -94,13 +106,13 @@ export default function TechnologySection() {
               description: "Zero-trust security, end-to-end encryption, and compliance with GDPR, SOC 2, ISO 27001, and PCI DSS.",
             },
           ].map((cap, index) => (
-            <RevealOnScroll key={cap.title} delay={index * 100}>
-              <div className="card-premium text-center">
+            <RevealOnScroll key={cap.title} delay={index * 100} className="h-full">
+              <div className="card-premium text-center h-full flex flex-col justify-start">
                 <div className="text-4xl mb-4">{cap.icon}</div>
-                <h3 className="font-display font-bold text-neutral-900 text-lg mb-3">
+                <h3 className="font-display font-bold text-neutral-900 text-xl mb-3">
                   {cap.title}
                 </h3>
-                <p className="text-sm text-neutral-500 leading-relaxed">
+                <p className="text-base text-neutral-600 leading-relaxed flex-1">
                   {cap.description}
                 </p>
               </div>

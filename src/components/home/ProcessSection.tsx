@@ -3,10 +3,17 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealOnScroll } from "@/components/ui/AnimatedCounter";
 
 const stepIcons: Record<string, string> = {
+  // Legacy
   Search: "🔍",
   PenTool: "✏️",
   Settings: "⚙️",
   Rocket: "🚀",
+  // Current 5-step icons
+  Building: "🏢",
+  MapPin: "📍",
+  Users: "🤝",
+  BookOpen: "📖",
+  CheckCircle: "✅",
 };
 
 export default function ProcessSection() {
@@ -38,9 +45,9 @@ export default function ProcessSection() {
           />
         </RevealOnScroll>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 relative">
           {/* Connection line (desktop only) */}
-          <div className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-primary-700 via-primary-500 to-accent-600" />
+          <div className="hidden lg:block absolute top-12 left-[10%] right-[10%] h-px bg-gradient-to-r from-primary-700 via-primary-500 to-accent-600" />
 
           {processSteps.map((step, index) => (
             <RevealOnScroll key={step.step} delay={index * 120}>
@@ -53,10 +60,10 @@ export default function ProcessSection() {
                   </span>
                 </div>
 
-                <h3 className="font-display font-bold text-white text-lg mb-3">
+                <h3 className="font-display font-bold text-white text-xl mb-3">
                   {step.title}
                 </h3>
-                <p className="text-sm text-neutral-400 leading-relaxed max-w-xs">
+                <p className="text-base text-neutral-300 leading-relaxed max-w-xs">
                   {step.description}
                 </p>
               </div>

@@ -52,13 +52,13 @@ export default function CareersPage() {
                 <span className="w-1.5 h-1.5 rounded-full bg-accent-400" />
                 {careersHero.badge}
               </div>
-              <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
                 {careersHero.headline}{" "}
                 <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
                   {careersHero.headlineAccent}
                 </span>
               </h1>
-              <p className="text-lg text-neutral-300 leading-relaxed mb-8">
+              <p className="text-base sm:text-lg text-neutral-300 leading-relaxed mb-8">
                 {careersHero.description}
               </p>
               <div className="flex flex-wrap gap-4">
@@ -191,19 +191,19 @@ export default function CareersPage() {
                           {role.type}
                         </span>
                       </div>
-                      <h3 className="font-display font-bold text-neutral-900 text-lg mb-1 group-hover:text-primary-600 transition-colors">
+                      <h3 className="font-display font-bold text-neutral-900 text-xl mb-1.5 group-hover:text-primary-600 transition-colors">
                         {role.title}
                       </h3>
-                      <p className="text-sm text-neutral-500 mb-3 max-w-2xl">{role.description}</p>
-                      <div className="flex flex-wrap gap-4 text-xs text-neutral-400">
+                      <p className="text-base text-neutral-600 leading-relaxed mb-3.5 max-w-2xl">{role.description}</p>
+                      <div className="flex flex-wrap gap-4 text-sm text-neutral-500">
                         <span className="flex items-center gap-1.5">
-                          <MapPin className="w-3.5 h-3.5" /> {role.location}
+                          <MapPin className="w-3.5 h-3.5 text-primary-500" /> {role.location}
                         </span>
                         <span className="flex items-center gap-1.5">
-                          <Clock className="w-3.5 h-3.5" /> {role.experience}
+                          <Clock className="w-3.5 h-3.5 text-primary-500" /> {role.experience}
                         </span>
                         <span className="flex items-center gap-1.5">
-                          <Briefcase className="w-3.5 h-3.5" /> {role.type}
+                          <Briefcase className="w-3.5 h-3.5 text-primary-500" /> {role.type}
                         </span>
                       </div>
                     </div>

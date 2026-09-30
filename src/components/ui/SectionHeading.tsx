@@ -44,7 +44,7 @@ export function SectionHeading({
       )}
       <h2
         className={cn(
-          "font-display font-bold mb-4",
+          "font-display text-3xl sm:text-4xl font-bold tracking-tight mb-4",
           light ? "text-white" : "text-neutral-900",
           titleClassName
         )}
@@ -59,7 +59,7 @@ export function SectionHeading({
       {description && (
         <p
           className={cn(
-            "text-lg leading-relaxed max-w-2xl",
+            "text-base sm:text-lg leading-relaxed max-w-4xl",
             light ? "text-neutral-300" : "text-neutral-500",
             centered && "mx-auto"
           )}

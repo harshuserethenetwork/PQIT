@@ -68,18 +68,18 @@ export default function FaqsClient() {
       <section className="relative pt-32 pb-20 bg-neutral-950 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-950 via-primary-950/60 to-neutral-950" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-primary-600/8 rounded-full blur-[120px]" />
-        <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+        <div className="container-custom relative z-10 text-center max-w-5xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-600/10 border border-primary-500/20 text-primary-300 text-sm font-medium mb-6">
             <span className="w-1.5 h-1.5 rounded-full bg-accent-400" />
             Frequently Asked Questions
           </div>
-          <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
             Got Questions?{" "}
             <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
               We Have Answers.
             </span>
           </h1>
-          <p className="text-lg text-neutral-300 leading-relaxed">
+          <p className="text-base sm:text-lg text-neutral-300 leading-relaxed">
             Everything you need to know about our services, engagement model, technology, and more.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function FaqsClient() {
 
       {/* FAQ Content */}
       <section className="section-padding bg-neutral-50">
-        <div className="container-custom max-w-4xl">
+        <div className="container-custom max-w-5xl">
           {/* Search */}
           <RevealOnScroll>
             <div className="relative mb-8">

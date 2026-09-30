@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
           />
         </RevealOnScroll>
 
-        <div className="mt-14 max-w-4xl mx-auto">
+        <div className="mt-14 max-w-5xl mx-auto">
           <div className="relative bg-white rounded-3xl p-8 md:p-12 border border-neutral-200 shadow-card-hover">
             {/* Quote icon */}
             <div className="absolute top-8 right-8 text-primary-100">
@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
               ✅ {testimonials[current].result}
             </div>
 
-            <blockquote className="text-lg md:text-xl text-neutral-700 leading-relaxed font-medium mb-8 relative z-10">
+            <blockquote className="text-lg sm:text-2xl text-neutral-800 leading-relaxed font-medium mb-8 relative z-10">
               &ldquo;{testimonials[current].quote}&rdquo;
             </blockquote>
 
@@ -53,13 +53,13 @@ export default function TestimonialsSection() {
                 />
               </div>
               <div>
-                <div className="font-display font-bold text-neutral-900 text-base">
+                <div className="font-display font-bold text-neutral-900 text-lg">
                   {testimonials[current].author}
                 </div>
-                <div className="text-sm text-neutral-500">
+                <div className="text-base text-neutral-600 font-normal">
                   {testimonials[current].title} · {testimonials[current].company}
                 </div>
-                <div className="text-xs text-primary-500 font-medium mt-0.5">
+                <div className="text-sm text-primary-600 font-semibold mt-0.5">
                   {testimonials[current].industry}
                 </div>
               </div>

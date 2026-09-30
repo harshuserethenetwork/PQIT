@@ -9,11 +9,11 @@ export const siteConfig = {
   shortName: "PIQT",
   description:
     "Process IQ Tech delivers enterprise-grade Business Process Management solutions that streamline operations, reduce costs, and accelerate growth for global organizations.",
-  url: "https://www.processiqtech.com",
-  email: "hello@processiqtech.com",
-  phone: "+1 (888) 742-9100",
-  supportEmail: "support@processiqtech.com",
-  careersEmail: "careers@processiqtech.com",
+  url: "https://www.processiqtechconsulting.com",
+  email: "support@processiqtechconsulting.com",
+  phone: "+91 9515783300",
+  supportEmail: "support@processiqtechconsulting.com",
+  careersEmail: "careers@processiqtechconsulting.com",
   address: {
     street: "1200 Innovation Drive, Suite 800",
     city: "Austin",

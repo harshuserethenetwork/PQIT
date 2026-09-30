@@ -37,18 +37,18 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-neutral-950 via-primary-950/60 to-neutral-950" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-primary-600/8 rounded-full blur-[120px]" />
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-5xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-600/10 border border-primary-500/20 text-primary-300 text-sm font-medium mb-6">
               <span className="w-1.5 h-1.5 rounded-full bg-primary-400" />
               {aboutHero.badge}
             </div>
-            <h1 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-normal text-white mb-6 leading-tight">
               {aboutHero.headline}{" "}
               <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
                 {aboutHero.headlineAccent}
               </span>
             </h1>
-            <p className="text-lg text-neutral-300 leading-relaxed max-w-2xl">
+            <p className="text-base sm:text-lg text-neutral-300 leading-relaxed max-w-4xl">
               {aboutHero.description}
             </p>
           </div>
@@ -116,13 +116,13 @@ export default function AboutPage() {
           </RevealOnScroll>
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {companyValues.map((value, index) => (
-              <RevealOnScroll key={value.title} delay={index * 80}>
-                <div className="card-premium group">
+              <RevealOnScroll key={value.title} delay={index * 80} className="h-full">
+                <div className="card-premium h-full flex flex-col justify-start group">
                   <div className="text-3xl mb-4">{valueIcons[value.icon] || "✨"}</div>
-                  <h3 className="font-display font-bold text-lg text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
+                  <h3 className="font-display font-bold text-xl sm:text-2xl text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
                     {value.title}
                   </h3>
-                  <p className="text-sm text-neutral-500 leading-relaxed">{value.description}</p>
+                  <p className="text-base text-neutral-600 leading-relaxed flex-1">{value.description}</p>
                 </div>
               </RevealOnScroll>
             ))}
@@ -198,9 +198,9 @@ export default function AboutPage() {
                     </a>
                   </div>
                   <div className="p-6">
-                    <h3 className="font-display font-bold text-neutral-900 text-lg mb-0.5">{leader.name}</h3>
-                    <p className="text-primary-600 text-sm font-semibold mb-3">{leader.title}</p>
-                    <p className="text-xs text-neutral-500 leading-relaxed">{leader.bio}</p>
+                    <h3 className="font-display font-bold text-neutral-900 text-xl mb-0.5">{leader.name}</h3>
+                    <p className="text-primary-600 text-base font-semibold mb-3">{leader.title}</p>
+                    <p className="text-sm text-neutral-600 leading-relaxed">{leader.bio}</p>
                   </div>
                 </div>
               </RevealOnScroll>

@@ -4,12 +4,18 @@ import { RevealOnScroll } from "@/components/ui/AnimatedCounter";
 import Image from "next/image";
 
 const iconEmojis: Record<string, string> = {
+  // Legacy keys (kept for safety)
   DollarSign: "💰",
   Clock: "⏱️",
   CheckCircle: "✅",
-  Users: "👥",
   LineChart: "📈",
   Lock: "🔒",
+  // New bpmAdvantages icon keys
+  Users: "🤝",
+  Maximize: "📐",
+  Settings: "🛠️",
+  TrendingUp: "🚀",
+  Award: "🏆",
 };
 
 export default function BpmAdvantagesSection() {
@@ -64,13 +70,13 @@ export default function BpmAdvantagesSection() {
                       {iconEmojis[adv.icon] || "⚙️"}
                     </div>
                     <div>
-                      <h4 className="font-display font-semibold text-neutral-900 mb-1 text-[0.95rem] group-hover:text-primary-600 transition-colors">
+                      <h4 className="font-display font-bold text-base sm:text-lg text-neutral-900 mb-1.5 group-hover:text-primary-600 transition-colors">
                         {adv.title}
                       </h4>
-                      <p className="text-xs text-neutral-500 leading-relaxed mb-2">
+                      <p className="text-sm text-neutral-600 leading-relaxed mb-2.5">
                         {adv.description}
                       </p>
-                      <span className="inline-block px-2 py-0.5 rounded-md bg-primary-100 text-primary-700 text-xs font-semibold">
+                      <span className="inline-block px-2.5 py-1 rounded-md bg-primary-100 text-primary-700 text-xs sm:text-sm font-semibold">
                         {adv.metric}
                       </span>
                     </div>

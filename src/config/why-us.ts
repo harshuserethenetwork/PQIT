@@ -13,51 +13,43 @@ export const whyUsHero = {
 export const differentiators = [
   {
     number: "01",
-    icon: "Brain",
-    title: "Outcome-First Methodology",
+    icon: "MapPin",
+    title: "Why India?",
     description:
-      "Unlike traditional consultancies that charge for effort, we define success metrics upfront and structure every engagement around delivering them. Our outcome-based contracts align our incentives directly with your results.",
-    highlight: "Performance-guaranteed engagements",
+      "India is considered a favorite destination for offshoring, maintaining its dominance in global sourcing of services owing to its mature ecosystem.",
+    highlight: "Mature offshoring ecosystem",
   },
   {
     number: "02",
-    icon: "Layers",
-    title: "Proprietary IQ Platform",
+    icon: "Users",
+    title: "Top Talent Pool",
     description:
-      "Our purpose-built BPM platform — IQ Automate — integrates process design, automation, analytics, and AI in a single environment. This reduces implementation risk, accelerates delivery, and gives clients a unified command center for all their processes.",
-    highlight: "3x faster implementation vs. point solutions",
+      "India still stands out in terms of size, breadth and quality of talent pool, lower cost of operations, lower business risk and ability to scale up.",
+    highlight: "Quality talent and scalability",
   },
   {
     number: "03",
-    icon: "Users",
-    title: "Domain-Deep Expertise",
+    icon: "TrendingUp",
+    title: "Evolved Industry",
     description:
-      "We don't deploy generalist consultants — we deploy teams with deep industry and process domain expertise. Every client engagement is staffed with specialists who've solved the same problem dozens of times before.",
-    highlight: "Average 12+ years domain experience per lead",
+      "With time India's offshoring industry has evolved to cater to varied needs of its client base across different domains and functions.",
+    highlight: "Adaptable to client needs",
   },
   {
     number: "04",
-    icon: "Globe",
-    title: "True Global Delivery",
+    icon: "DollarSign",
+    title: "Transparent Pricing",
     description:
-      "With delivery centers in Austin, London, Singapore, and Mumbai, we provide 24/7 follow-the-sun support and local expertise. We understand the regulatory, cultural, and operational nuances of the markets you operate in.",
-    highlight: "40+ countries served",
+      "Our business process management starts at USD 1800 per month per employee (9 hours a day, 5 days a week). This pricing includes all expenses, payroll, taxes and all related costs.",
+    highlight: "All-inclusive $1800/mo pricing",
   },
   {
     number: "05",
-    icon: "Repeat",
-    title: "Continuous Optimization",
+    icon: "CheckCircle",
+    title: "Clear Terms",
     description:
-      "Our engagement doesn't end at go-live. We deploy process intelligence tools that continuously monitor performance, surface improvement opportunities, and feed recommendations back into your operations automatically.",
-    highlight: "Ongoing value creation post-launch",
-  },
-  {
-    number: "06",
-    icon: "Shield",
-    title: "Enterprise Security & Compliance",
-    description:
-      "Security is built into our DNA. From zero-trust architecture to automated compliance monitoring, we ensure your most sensitive processes are protected without compromising operational agility.",
-    highlight: "Zero breaches in 15 years of operation",
+      "We require a minimum of 5 employees to start a project. We take a 50% advance payment to start the project and thereafter payments will be made in advance every Friday.",
+    highlight: "Simple terms and conditions",
   },
 ];
 
