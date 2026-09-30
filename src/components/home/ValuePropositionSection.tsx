@@ -1,4 +1,4 @@
-import { Zap, Shield, TrendingUp, Globe } from "lucide-react";
+import { Zap, Shield, TrendingUp, Globe, Clock, Briefcase, Cpu } from "lucide-react";
 import { valuePropositions } from "@/config/homepage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { RevealOnScroll } from "@/components/ui/AnimatedCounter";
@@ -8,6 +8,9 @@ const iconMap: Record<string, React.ComponentType<{ className?: string; strokeWi
   Shield,
   TrendingUp,
   Globe,
+  Clock,
+  Briefcase,
+  Cpu,
 };
 
 const colorMap: Record<string, string> = {
@@ -15,6 +18,9 @@ const colorMap: Record<string, string> = {
   Shield: "from-emerald-500 to-teal-500",
   TrendingUp: "from-primary-500 to-violet-500",
   Globe: "from-blue-500 to-cyan-500",
+  Clock: "from-sky-500 to-blue-500",
+  Briefcase: "from-violet-500 to-purple-500",
+  Cpu: "from-teal-500 to-emerald-500",
 };
 
 const bgMap: Record<string, string> = {
@@ -22,6 +28,9 @@ const bgMap: Record<string, string> = {
   Shield: "bg-emerald-50",
   TrendingUp: "bg-primary-50",
   Globe: "bg-blue-50",
+  Clock: "bg-sky-50",
+  Briefcase: "bg-violet-50",
+  Cpu: "bg-teal-50",
 };
 
 export default function ValuePropositionSection() {

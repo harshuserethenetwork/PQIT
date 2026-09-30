@@ -4,12 +4,18 @@ import { RevealOnScroll } from "@/components/ui/AnimatedCounter";
 import Image from "next/image";
 
 const iconEmojis: Record<string, string> = {
+  // Legacy keys (kept for safety)
   DollarSign: "💰",
   Clock: "⏱️",
   CheckCircle: "✅",
-  Users: "👥",
   LineChart: "📈",
   Lock: "🔒",
+  // New bpmAdvantages icon keys
+  Users: "🤝",
+  Maximize: "📐",
+  Settings: "🛠️",
+  TrendingUp: "🚀",
+  Award: "🏆",
 };
 
 export default function BpmAdvantagesSection() {

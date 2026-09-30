@@ -3,14 +3,14 @@
 // ============================================================
 
 export const heroContent = {
-  badge: "Trusted by 500+ Enterprises Worldwide",
-  headline: "Transform Your Business with",
-  headlineAccent: "Intelligent Process Excellence",
+  badge: "Global BPM & Call Center Solutions",
+  headline: "We Make Your Business Work",
+  headlineAccent: "Smarter, Faster & 24/7.",
   description:
-    "Process IQ Tech delivers AI-powered BPM solutions that streamline operations, eliminate inefficiencies, and accelerate growth. Partner with us to unlock the full potential of your business processes.",
-  primaryCta: { label: "Schedule a Free Assessment", href: "/contact" },
+    "We are a 24/7 global solution oriented call center aimed at meeting the customer relation goals of businesses. We fill in the gap for business owners by employing a highly skilled, dedicated and well-trained cadre of accent-neutral customer service professionals and business support specialists.",
+  primaryCta: { label: "Get In Touch", href: "/contact" },
   secondaryCta: { label: "Explore Our Services", href: "/services" },
-  trustedBy: ["Fortune 500", "FTSE 100", "DAX 40", "ASX 200"],
+  trustedBy: ["Zendesk", "Twilio", "Five9", "Salesforce"],
 };
 
 export const stats = [
@@ -24,75 +24,71 @@ export const stats = [
 
 export const valuePropositions = [
   {
+    icon: "Clock",
+    title: "24x7 Operations",
+    description:
+      "24X7 and 365 days business operations ensuring round-the-clock availability for your customers and processes.",
+  },
+  {
+    icon: "Briefcase",
+    title: "Experienced Management",
+    description:
+      "More than 15 years of management team experience guiding operations and strategy effectively.",
+  },
+  {
+    icon: "Cpu",
+    title: "Tech + BPM",
+    description:
+      "Unique combination of technology with business process management for superior outcomes.",
+  },
+  {
     icon: "Zap",
-    title: "Rapid Time-to-Value",
+    title: "High Automation",
     description:
-      "Our proven implementation methodology delivers measurable results within 90 days — not quarters or years.",
-  },
-  {
-    icon: "Shield",
-    title: "Enterprise-Grade Security",
-    description:
-      "SOC 2 Type II certified, ISO 27001 compliant, with end-to-end encryption and zero-trust architecture.",
-  },
-  {
-    icon: "TrendingUp",
-    title: "Guaranteed ROI",
-    description:
-      "We back every engagement with performance guarantees and transparent ROI tracking from day one.",
-  },
-  {
-    icon: "Globe",
-    title: "Global Delivery at Scale",
-    description:
-      "24/7 delivery capabilities across 40+ countries with multilingual support and local compliance expertise.",
+      "High level of automation in business operations to increase efficiency and productivity.",
   },
 ];
 
 export const processSteps = [
   {
     step: "01",
-    title: "Discovery & Assessment",
-    description:
-      "We conduct a comprehensive audit of your existing processes, technology stack, and organizational structure to identify opportunities.",
-    icon: "Search",
+    title: "Company setup",
+    description: "Company and bank account setup, licenses and legal compliance. Appointing chartered accountant.",
+    icon: "Building",
   },
   {
     step: "02",
-    title: "Strategy & Design",
-    description:
-      "Our experts design a tailored transformation roadmap with clear milestones, KPIs, and technology recommendations.",
-    icon: "PenTool",
+    title: "Place selection",
+    description: "Selecting the place with modern amenities, power backup, internet. Making sure it fits into the process requirement.",
+    icon: "MapPin",
   },
   {
     step: "03",
-    title: "Build & Automate",
-    description:
-      "We implement optimized workflows, deploy automation bots, and integrate systems using agile delivery sprints.",
-    icon: "Settings",
+    title: "Talent acquisition",
+    description: "Selection and hiring right candidates for the process. Completing on-boarding procedures, documentation and employment verification.",
+    icon: "Users",
   },
   {
     step: "04",
-    title: "Launch & Optimize",
-    description:
-      "After go-live, we continuously monitor performance metrics and refine processes to maximize ROI over time.",
-    icon: "Rocket",
+    title: "Training and development",
+    description: "Understanding service level agreement, documenting the procedures and training employees.",
+    icon: "BookOpen",
+  },
+  {
+    step: "05",
+    title: "Service delivery",
+    description: "Delivering services as per the service level agreement, quality check and meeting performance metric.",
+    icon: "CheckCircle",
   },
 ];
 
 export const technologies = [
-  { name: "SAP", logo: "sap" },
-  { name: "Salesforce", logo: "salesforce" },
-  { name: "ServiceNow", logo: "servicenow" },
-  { name: "Microsoft", logo: "microsoft" },
-  { name: "UiPath", logo: "uipath" },
-  { name: "Automation Anywhere", logo: "automationanywhere" },
-  { name: "Blue Prism", logo: "blueprism" },
-  { name: "AWS", logo: "aws" },
-  { name: "Google Cloud", logo: "googlecloud" },
-  { name: "Azure", logo: "azure" },
-  { name: "Oracle", logo: "oracle" },
-  { name: "IBM", logo: "ibm" },
+  { name: "Zendesk", logo: "zendesk" },
+  { name: "Zoho", logo: "zoho" },
+  { name: "Salesforce CRM", logo: "salesforce" },
+  { name: "Twilio VOIP", logo: "twilio" },
+  { name: "Five9 dialers", logo: "five9" },
+  { name: "Logitech", logo: "logitech" },
 ];
 
 export const testimonials = [
@@ -130,40 +126,40 @@ export const testimonials = [
 
 export const bpmAdvantages = [
   {
-    icon: "DollarSign",
-    title: "Cost Reduction",
-    description: "Eliminate redundant tasks and reduce operational costs by 25–45% on average.",
-    metric: "35% avg. cost reduction",
-  },
-  {
-    icon: "Clock",
-    title: "Speed to Market",
-    description: "Compress cycle times and accelerate product and service delivery timelines.",
-    metric: "60% faster processes",
-  },
-  {
-    icon: "CheckCircle",
-    title: "Quality Improvement",
-    description: "Reduce error rates and improve first-pass accuracy with standardized workflows.",
-    metric: "99.2% accuracy rate",
-  },
-  {
     icon: "Users",
-    title: "Employee Experience",
-    description: "Automate mundane tasks so your team focuses on creative, strategic work.",
-    metric: "4.7/5 employee satisfaction",
+    title: "Alternate Talent Pool",
+    description: "Access a wide and highly skilled talent pool globally to fulfill your operational needs.",
+    metric: "Global resources",
   },
   {
-    icon: "LineChart",
+    icon: "Maximize",
+    title: "Greater Flexibility",
+    description: "Scale operations up or down quickly depending on seasonal demand and business requirements.",
+    metric: "Agile operations",
+  },
+  {
+    icon: "Settings",
+    title: "Operational Efficiency",
+    description: "Streamline processes to ensure 24x7 business operations and productivity.",
+    metric: "24x7 operations",
+  },
+  {
+    icon: "TrendingUp",
     title: "Scalability",
-    description: "Build processes that scale with business growth without proportional cost increases.",
-    metric: "10x capacity, 2x cost",
+    description: "Easily maintain operational scalability as your business grows without proportional cost increases.",
+    metric: "Seamless growth",
   },
   {
-    icon: "Lock",
-    title: "Compliance & Risk",
-    description: "Enforce regulatory compliance automatically with audit trails and controls.",
-    metric: "100% audit coverage",
+    icon: "DollarSign",
+    title: "Cost Effectiveness",
+    description: "Overcome the challenge of increased operational costs and wages by optimizing resources.",
+    metric: "High ROI",
+  },
+  {
+    icon: "Award",
+    title: "Delivery Excellence",
+    description: "Ensure quality services and high performance aligned with technological advances.",
+    metric: "Quality assured",
   },
 ];
 

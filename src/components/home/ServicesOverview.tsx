@@ -14,12 +14,19 @@ const colorConfig: Record<string, { bg: string; text: string; badge: string }> =
 };
 
 const serviceIcons: Record<string, string> = {
+  // Legacy keys (kept for safety)
   GitBranch: "🎯",
   Cpu: "⚡",
   Workflow: "🔄",
   FileText: "📄",
   BarChart3: "📊",
   Users: "🌐",
+  // New service icon keys
+  Building: "🏢",
+  Lightbulb: "💡",
+  PhoneCall: "📞",
+  Database: "🗄️",
+  CreditCard: "💳",
 };
 
 export default function ServicesOverview() {

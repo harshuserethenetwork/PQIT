@@ -7,7 +7,7 @@ export const aboutHero = {
   headline: "Built on a Mission to",
   headlineAccent: "Transform How Business Works",
   description:
-    "Founded in 2009, Process IQ Tech emerged from a simple but powerful conviction: that organizations deserve to operate at their full potential. Today, we're a global BPM leader helping the world's most ambitious companies unlock operational excellence.",
+    "We are a 24/7 global solution oriented call center aimed at meeting the customer relation goals of businesses. We fill in the gap for business owners by employing a highly skilled, dedicated and well-trained cadre of accent-neutral customer service professionals and business support specialists who attend to the needs of customers while the business owner focuses on other growth measures.",
 };
 
 export const companyMilestones = [
