@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
           />
         </RevealOnScroll>
 
-        <div className="mt-14 max-w-4xl mx-auto">
+        <div className="mt-14 max-w-5xl mx-auto">
           <div className="relative bg-white rounded-3xl p-8 md:p-12 border border-neutral-200 shadow-card-hover">
             {/* Quote icon */}
             <div className="absolute top-8 right-8 text-primary-100">

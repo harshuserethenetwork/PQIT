@@ -42,7 +42,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main headline */}
-          <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s", opacity: 0 }}>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] tracking-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s", opacity: 0 }}>
             {heroContent.headline}
             <br />
             <span className="bg-gradient-to-r from-primary-400 via-violet-400 to-accent-400 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ export default function HeroSection() {
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-neutral-300 leading-relaxed max-w-2xl mb-10 animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <p className="text-base sm:text-lg text-neutral-300 leading-relaxed max-w-4xl mb-10 animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
             {heroContent.description}
           </p>
 

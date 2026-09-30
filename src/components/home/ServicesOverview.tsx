@@ -57,7 +57,7 @@ export default function ServicesOverview() {
             const colors = colorConfig[service.color] || colorConfig.indigo;
             const emoji = serviceIcons[service.icon] || "🔧";
             return (
-              <RevealOnScroll key={service.id} delay={index * 80}>
+              <RevealOnScroll key={service.id} delay={index * 80} className="h-full">
                 <Link
                   href={`/services#${service.id}`}
                   className="card-premium group flex flex-col h-full hover:border-primary-200"

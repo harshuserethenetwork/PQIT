@@ -51,8 +51,8 @@ export default function ValuePropositionSection() {
           {valuePropositions.map((vp, index) => {
             const Icon = iconMap[vp.icon];
             return (
-              <RevealOnScroll key={vp.title} delay={index * 100}>
-                <div className="card-premium group h-full">
+              <RevealOnScroll key={vp.title} delay={index * 100} className="h-full">
+                <div className="card-premium group h-full flex flex-col justify-start">
                   <div className={`w-12 h-12 rounded-xl ${bgMap[vp.icon]} flex items-center justify-center mb-5`}>
                     <div className={`bg-gradient-to-br ${colorMap[vp.icon]} rounded-lg p-2.5`}>
                       {Icon && <Icon className="w-5 h-5 text-white" strokeWidth={2} />}
@@ -61,7 +61,7 @@ export default function ValuePropositionSection() {
                   <h3 className="text-lg font-display font-bold text-neutral-900 mb-3 group-hover:text-primary-600 transition-colors">
                     {vp.title}
                   </h3>
-                  <p className="text-sm text-neutral-500 leading-relaxed">
+                  <p className="text-sm text-neutral-500 leading-relaxed flex-1">
                     {vp.description}
                   </p>
                 </div>
