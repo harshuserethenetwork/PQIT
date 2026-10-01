@@ -10,6 +10,7 @@ import IndustriesSection from "@/components/home/IndustriesSection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
 import CtaBanner from "@/components/home/CtaBanner";
+import { siteSections } from "@/config/sections";
 
 export const metadata: Metadata = {
   title: "Process IQ Tech | Intelligent Business Process Management",
@@ -18,19 +19,22 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+  const cfg = siteSections.homepage;
+
   return (
     <>
-      <HeroSection />
-      <ValuePropositionSection />
-      <StatsSection />
-      <ServicesOverview />
-      <BpmAdvantagesSection />
-      <ProcessSection />
-      <TechnologySection />
-      <IndustriesSection />
-      <TestimonialsSection />
-      <WhyUsSection />
-      <CtaBanner />
+      {cfg.hero && <HeroSection />}
+      {cfg.valueProposition && <ValuePropositionSection />}
+      {cfg.stats && <StatsSection />}
+      {cfg.servicesOverview && <ServicesOverview />}
+      {cfg.bpmAdvantages && <BpmAdvantagesSection />}
+      {cfg.process && <ProcessSection />}
+      {cfg.technology && <TechnologySection />}
+      {cfg.industries && <IndustriesSection />}
+      {cfg.testimonials && <TestimonialsSection />}
+      {cfg.whyUs && <WhyUsSection />}
+      {cfg.ctaBanner && <CtaBanner />}
     </>
   );
 }
+
