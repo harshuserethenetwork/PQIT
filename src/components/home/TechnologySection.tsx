@@ -8,10 +8,10 @@ const techLogoUrls: Record<string, string> = {
   // New technologies
   zendesk: "https://cdn.simpleicons.org/zendesk/03363D",
   zoho: "https://cdn.simpleicons.org/zoho/E42527",
-  salesforce: "https://cdn.simpleicons.org/salesforce/00A1E0",
-  twilio: "https://cdn.simpleicons.org/twilio/F22F46",
-  five9: "https://cdn.worldvectorlogo.com/logos/five9.svg",
-  logitech: "https://cdn.simpleicons.org/logitech/00B8FC",
+  salesforce: "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Salesforce.com_logo.svg/960px-Salesforce.com_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20210504050649",
+  twilio: "https://img.logo.dev/twilio.com?token=live_6a1a28fd-6420-4492-aeb0-b297461d9de2&size=512&retina=true&format=png",
+  five9: "https://www.five9.com/sites/default/files/inline-images/five9-logo-media-resources.png",
+  logitech: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ii7o6gef1MfbVA1QDNswZOr96KcOUUN3rJyHVnOQmg&s=10",
   // Legacy technologies (kept for safety)
   sap: "https://cdn.simpleicons.org/sap/0FAAFF",
   servicenow: "https://cdn.simpleicons.org/servicenow/62D84E",
